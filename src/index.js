@@ -12,8 +12,6 @@ module.exports = function toReadable (number) {
 let h = inStringNumber[0]; 
 let d = inStringNumber[1]; 
 let u = inStringNumber [2];
-
-
 // Счет от 0 до 9 включительно
 if ( number >= 0 && number <= 9){
     return arrU[number]
@@ -31,7 +29,6 @@ if (number >= 20 && number <= 99){
 
   return `${arrTwentyninety[inStringNumber[0]]}${ty}${' '}${arrU[inStringNumber[1]]}`
 }
-
 
 function callBack ( du ) {
 let inStringDU = du.toString()
@@ -53,8 +50,6 @@ const num = +du
       return `${arrTwentyninety[inStringDU[0]]}${ty}${' '}${arrU[inStringDU[1]]}`
   }
 }
-
-
 // от 100до 999
 if ( number >= 100 && number <= 999){
     if (( d !== '0' && u !== '0') || (d !== '0' && u === '0') || (d === '0' && u !== '0')){
